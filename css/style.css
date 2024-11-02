@@ -16,7 +16,7 @@ body {
 }
 
 /* Estilos para las barras deslizantes */
-.scroll-bar {
+.scroll-bar-top {
     width: 100%;
     overflow: hidden;
     background-color: #000000;
@@ -28,15 +28,27 @@ body {
 
 .scroll-content {
     display: flex;
-    animation: scroll 10s linear infinite;
+    animation: scroll 35s linear infinite;
+    margin-left: 3000px;
+}
+.scroll-content-bottom {
+    display: flex;
+    animation: scroll 15s linear infinite;
+    margin-left: 20px;
 }
 
 .category {
     padding: 10px 20px;
     white-space: nowrap;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1rem;
     color: #9c307c;
+}
+
+/* Subcategorías */
+.category ul {
+    list-style: none; /* Quitar los puntos de la lista */
+    padding-left: 0; /* Quitar padding */
 }
 
 /* Animación para el desplazamiento automático */
@@ -57,12 +69,14 @@ body {
 /* Estilos del slider principal */
 .slider {
     position: relative;
-    width: 100%;
-    max-width: 1000px;
-    height: 90vh;
+    width: 150%;
+    height: 100vh;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    max-height: 500px;
+    margin: 0 auto;
 }
 
 .slide {
@@ -82,4 +96,8 @@ body {
     height: 100%;
     object-fit: contain;
     background-color: #ffffff; /* Color del container de la imagen */
+    display: block;          /* Asegúrate de que la imagen sea un bloque para centrarla */
+    margin: 0 auto;         /* Centrar la imagen */
 }
+
+

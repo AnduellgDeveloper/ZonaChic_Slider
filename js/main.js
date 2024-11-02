@@ -1,6 +1,6 @@
 const slides = document.querySelectorAll('.slide');
 let currentIndex = 0;
-const intervalTime = 5000;
+const intervalTime = 4500;
 
 function showSlide(index) {
     slides.forEach((slide, i) => {
