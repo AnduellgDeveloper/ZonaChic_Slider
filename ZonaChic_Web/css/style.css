@@ -1,0 +1,85 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #ffffff;  /* Color de la pagina */
+}
+
+/* Estilos para las barras deslizantes */
+.scroll-bar {
+    width: 100%;
+    overflow: hidden;
+    background-color: #000000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.scroll-content {
+    display: flex;
+    animation: scroll 10s linear infinite;
+}
+
+.category {
+    padding: 10px 20px;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #9c307c;
+}
+
+/* Animación para el desplazamiento automático */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Barra superior e inferior */
+.top-bar {
+    margin-bottom: 10px;
+}
+
+.bottom-bar {
+    margin-top: 10px;
+}
+
+/* Estilos del slider principal */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 90vh;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #ffffff; /* Color del container de la imagen */
+}
