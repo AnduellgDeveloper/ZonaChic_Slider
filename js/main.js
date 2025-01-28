@@ -15,6 +15,19 @@ function nextSlide() {
     currentIndex = (currentIndex + 1) % slides.length;
     showSlide(currentIndex);
 }
+document.addEventListener("DOMContentLoaded", () => {
+    const lazyLoadElements = document.querySelectorAll(".lazy-load");
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("loaded");
+                observer.unobserve(entry.target);
+            }
+        });
+    });
+    lazyLoadElements.forEach(element => observer.observe(element));
+});
 
 showSlide(currentIndex);
 setInterval(nextSlide, intervalTime);

@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     height: 100vh;
 
-    background: linear-gradient(45deg, #2b5876, #4e4376, #6a3093, #a044ff);
+    background: linear-gradient(45deg, #2b5876, #4e4376, #6a3093, #a147fd);
 
     background-size: 300% 300%;
     animation: gradientAnimation 8s infinite alternate;
@@ -45,9 +45,10 @@ body {
 
 .scroll-content {
     display: flex;
-    animation: scroll 90s linear infinite;
+    animation: scroll 200s linear infinite;
     margin-left: 3000px;
 }
+
 .category {
     padding: 10px 20px;
     white-space: nowrap;
@@ -59,18 +60,18 @@ body {
 /* Subcategorías */
 .category ul {
     list-style: none; /* Quitar los puntos de la lista */
-    padding-left: 0; /* Quitar padding */
+    padding-left: 1px; /* Quitar padding */
 }
 
 /* Animación para el desplazamiento automático */
 @keyframes scroll {
-    0% { transform: translateX(0); }
+    0% { transform: translateX(35%); }
     100% { transform: translateX(-100%); }
 }
 
 /* Barra superior e inferior */
 .top-bar {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 /* Estilos del slider principal */
@@ -103,6 +104,15 @@ body {
     height: 100%;
     object-fit: contain;
     background-color: #f4f1e9; /* Color del container de la imagen */
-    display: block;          /* Asegúrate de que la imagen sea un bloque para centrarla */
+    display: block;
     margin: 0 auto;         /* Centrar la imagen */
 }
+.lazy-load {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.lazy-load.loaded {
+    opacity: 1;
+}
+
