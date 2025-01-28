@@ -6,6 +6,9 @@
 }
 
 body {
+    max-width: 1200px;
+    max-height: 800px;
+    margin: 0 auto;
     font-family: Arial, sans-serif;
     display: flex;
     align-items: center;
@@ -13,11 +16,10 @@ body {
     flex-direction: column;
     height: 100vh;
 
-    /* Fondo degradado animado */
     background: linear-gradient(45deg, #2b5876, #4e4376, #6a3093, #a044ff);
 
     background-size: 300% 300%;
-    animation: gradientAnimation 2s infinite alternate;
+    animation: gradientAnimation 4s infinite alternate;
 }
 
 /* Animación del degradado */
@@ -106,7 +108,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    background-color: #ffffff; /* Color del container de la imagen */
+    background-color: #f4f1e9; /* Color del container de la imagen */
     display: block;          /* Asegúrate de que la imagen sea un bloque para centrarla */
     margin: 0 auto;         /* Centrar la imagen */
 }
