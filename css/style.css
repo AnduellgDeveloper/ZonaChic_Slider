@@ -12,7 +12,22 @@ body {
     justify-content: center;
     flex-direction: column;
     height: 100vh;
-    background-color: #ffffff;  /* Color de la pagina */
+
+    /* Fondo degradado animado */
+    background: linear-gradient(45deg, #2b5876, #4e4376, #6a3093, #a044ff);
+
+    background-size: 300% 300%;
+    animation: gradientAnimation 2s infinite alternate;
+}
+
+/* Animación del degradado */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 /* Estilos para las barras deslizantes */
@@ -42,7 +57,7 @@ body {
     white-space: nowrap;
     font-weight: bold;
     font-size: 1rem;
-    color: #9c307c;
+    color: #ffffff;
 }
 
 /* Subcategorías */
@@ -60,10 +75,6 @@ body {
 /* Barra superior e inferior */
 .top-bar {
     margin-bottom: 10px;
-}
-
-.bottom-bar {
-    margin-top: 10px;
 }
 
 /* Estilos del slider principal */
@@ -99,5 +110,3 @@ body {
     display: block;          /* Asegúrate de que la imagen sea un bloque para centrarla */
     margin: 0 auto;         /* Centrar la imagen */
 }
-
-
