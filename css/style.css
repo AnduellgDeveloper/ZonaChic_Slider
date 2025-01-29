@@ -9,7 +9,8 @@ body {
     max-width: 1200px;
     max-height: 800px;
     margin: 0 auto;
-    font-family: Arial, sans-serif;
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,23 +45,21 @@ body {
 }
 
 .scroll-content {
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    margin-top: 5px;
     display: flex;
-    animation: scroll 200s linear infinite;
+    user-select: none;
+    pointer-events: none;
+    animation: scroll 150s linear infinite;
     margin-left: 3000px;
 }
 
 .category {
     padding: 10px 20px;
     white-space: nowrap;
-    font-weight: bold;
-    font-size: 1rem;
+    font-size: 30px;
     color: #ffffff;
-}
-
-/* Subcategorías */
-.category ul {
-    list-style: none; /* Quitar los puntos de la lista */
-    padding-left: 1px; /* Quitar padding */
 }
 
 /* Animación para el desplazamiento automático */
@@ -71,6 +70,7 @@ body {
 
 /* Barra superior e inferior */
 .top-bar {
+    margin-top: 10px;
     margin-bottom: 15px;
 }
 
@@ -86,7 +86,7 @@ body {
     max-height: 550px;
     margin: 0 auto;
 }
-
+/* Animación de cambiar*/
 .slide {
     position: absolute;
     width: 100%;
