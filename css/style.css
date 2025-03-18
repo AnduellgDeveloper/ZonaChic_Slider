@@ -17,7 +17,7 @@ body {
     flex-direction: column;
     height: 100vh;
 
-    background: linear-gradient(45deg, #2b5876, #4e4376, #6a3093, #a147fd);
+    background: linear-gradient(45deg, #70757e, #5e5b69, #32b402, #8ae755);
 
     background-size: 300% 300%;
     animation: gradientAnimation 8s infinite alternate;
@@ -44,7 +44,7 @@ body {
     justify-content: center;
 }
 
-.scroll-content {
+/*.scroll-content {
     font-family: 'Lobster', cursive;
     font-size: 50px;
     margin-top: 5px;
@@ -54,6 +54,8 @@ body {
     animation: scroll 150s linear infinite;
     margin-left: 3000px;
 }
+*/
+
 
 .category {
     padding: 10px 20px;
@@ -63,10 +65,12 @@ body {
 }
 
 /* Animación para el desplazamiento automático */
-@keyframes scroll {
+/*@keyframes scroll {
     0% { transform: translateX(35%); }
     100% { transform: translateX(-100%); }
 }
+*/
+
 
 /* Barra superior e inferior */
 .top-bar {
