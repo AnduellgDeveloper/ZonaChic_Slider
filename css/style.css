@@ -17,19 +17,26 @@ body {
     flex-direction: column;
     height: 100vh;
 
-    background: linear-gradient(45deg, #70757e, #5e5b69, #32b402, #8ae755);
+    /* Degradado con colores suaves */
+    background: linear-gradient(45deg, #B0B0B0, #8C8C8C, #4CAF50, #A8D08D);
 
+    /* Tienes el tamaño del degradado al 300% para que se mueva más fluido */
     background-size: 300% 300%;
+
+    /* Animación suave del fondo */
     animation: gradientAnimation 8s infinite alternate;
 }
 
-/* Animación del degradado */
+/* Definición de la animación */
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 50%;
     }
-    100% {
+    50% {
         background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
     }
 }
 
