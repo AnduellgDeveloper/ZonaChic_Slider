@@ -6,5 +6,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="sketchfab-viewer-1.8.1" level="application" />
+    <orderEntry type="library" name="embed" level="application" />
   </component>
 </module>

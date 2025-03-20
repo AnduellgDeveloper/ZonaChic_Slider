@@ -3,22 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zona Chic Star Fashion</title>
+    <title>Tecno Impacto - Calarca </title>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carrusel.css">
+    <script src="https://www.youtube.com/iframe_api"></script> <!-- Cargar la API de YouTube -->
+    <script async src="//www.instagram.com/embed.js"></script>
 </head>
 <body>
 
-<!-- Inserta el video de YouTube con parámetros de autoplay y mute para evitar restricciones -->
-<div class="youtube-video">
-    <iframe width="560" height="315"
-            src="https://www.youtube.com/embed/agvV_8glYz4?autoplay=1&controls=0&modestbranding=1&rel=0&showinfo=0&mute=1"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-    </iframe>
-</div>
 
-<script src="js/main.js"></script>
+    <!--
+    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DFBJApDR1rO/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+        <div style="padding:16px;">
+            <a href="https://www.instagram.com/p/DFBJApDR1rO/?utm_source=ig_embed&amp;utm_campaign=loading" style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
+                <div style="display: flex; flex-direction: row; align-items: center;">
+                    <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
+                    <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
+                        <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </blockquote>
+
+    -->
+
+    <div class="carousel">
+        <div class="carousel-images">
+            <!-- Carrusel de imágenes de Cloudinary -->
+
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1742491414/n1sup0frkdunhtnjnloi.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1742491414/twwxxmc2zxvipxobzgmh.png" alt="Imagen 2">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1742491414/bpw94tcfm3jbnmn4rgcd.png" alt="Imagen 3">
+
+            <!-- Añadir más imágenes según sea necesario -->
+        </div>
+        <div class="carousel-buttons">
+            <button class="carousel-button" id="prev">Prev</button>
+            <button class="carousel-button" id="next">Next</button>
+        </div>
+    </div>
+
+    <script src="js/carrusel.js"></script>
+    <script src="js/instagram.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/videos.js"></script>
 </body>
 </html>

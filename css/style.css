@@ -18,7 +18,7 @@ body {
     height: 100vh;
 
     /* Degradado con colores suaves */
-    background: linear-gradient(45deg, #B0B0B0, #8C8C8C, #4CAF50, #A8D08D);
+    background: linear-gradient(45deg, #777575, #9b9999, #4dd753, #6ae814);
 
     /* Tienes el tamaño del degradado al 300% para que se mueva más fluido */
     background-size: 300% 300%;
