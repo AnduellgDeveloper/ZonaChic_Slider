@@ -1,0 +1,30 @@
+/* Estilo para el encabezado */
+.header {
+    display: flex;
+    width: 100%; /* Ancho completo del contenedor */
+    height: 200px; /* Altura del encabezado */
+    position: relative;
+
+}
+
+/* Fondo blanco detrás de la imagen */
+.header .background {
+    position: absolute; /* Posiciona el fondo detrás de la imagen */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho */
+    height: 100%; /* Ocupa toda la altura */
+    background-color: #ffffff; /* Fondo blanco */
+
+}
+
+
+/* Estilo para la imagen */
+.header img {
+    position: relative;
+    max-width: 100%; /* Hace que la imagen no se desborde */
+    max-height: 100%; /* Limita la altura de la imagen para que no sobrepase el contenedor */
+    object-fit: contain; /* Asegura que la imagen no se distorsione */
+    display: flex; /* Evita márgenes innecesarios */
+    margin: 0 auto; /* Centra la imagen */
+}

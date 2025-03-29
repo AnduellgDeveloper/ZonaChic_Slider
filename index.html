@@ -7,37 +7,132 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/carrusel.css">
+    <link rel="stylesheet" href="css/Buttons.css">
+    <link rel="stylesheet" href="css/header.css">
     <script src="https://www.youtube.com/iframe_api"></script> <!-- Cargar la API de YouTube -->
     <script async src="//www.instagram.com/embed.js"></script>
 </head>
 <body>
 
 
-    <!--
-    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/DFBJApDR1rO/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-        <div style="padding:16px;">
-            <a href="https://www.instagram.com/p/DFBJApDR1rO/?utm_source=ig_embed&amp;utm_campaign=loading" style="background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank">
-                <div style="display: flex; flex-direction: row; align-items: center;">
-                    <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div>
-                    <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
-                        <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div>
-                        <div style="background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div>
-                    </div>
-                </div>
-            </a>
+    <header class="header">
+        <div class="background">
+        <img src="images/Logos/TecnoImpacto.webp" loading="lazy" alt="TecnoImpacto Logo">
         </div>
-    </blockquote>
+    </header>
 
-    -->
+<!-- Contenedor principal de los botones -->
+    <div class="container">
+    <header>
+        <nav>
+            <button class="dropdown" onclick="toggleDropdown('gorras')">Gorras ▼</button>
+            <button class="dropdown" onclick="toggleDropdown('forros')">Forros ▼</button>
+            <button class="dropdown" onclick="toggleDropdown('relojes')">Relojes ▼</button>
+            <button class="dropdown" onclick="toggleDropdown('gafas')">Gafas ▼</button>
+            <button id="theme-toggle" onclick="toggleTheme()"></button>
+        </nav>
+    </header>
+    </div>
+
+
+    <div class="dropdown-content" id="gorras-dropdown">
+        <!-- Opciones de gorras -->
+        <button class="item" onclick="updateProductImage('gorras', 1)">Gorra Deportiva</button>
+        <button class="item" onclick="updateProductImage('gorras', 2)">Gorra de Béisbol</button>
+    </div>
+
+    <div class="dropdown-content" id="relojes-dropdown">
+        <!-- Opciones de relojes -->
+        <button class="item" onclick="updateProductImage('relojes', 1)">Reloj Deportivo</button>
+        <button class="item" onclick="updateProductImage('relojes', 2)">Reloj de Pulsera</button>
+    </div>
+
+    <div class="dropdown-content" id="forros-dropdown">
+        <!-- Opciones de forros -->
+        <button class="item" onclick="updateProductImage('forros', 1)">Forro Fino</button>
+        <button class="item" onclick="updateProductImage('forros', 2)">Forro Protector</button>
+    </div>
+
+    <div class="dropdown-content" id="gafas-dropdown">
+        <!-- Opciones de gafas -->
+        <button class="item" onclick="updateProductImage('gafas', 1)">Gafas de Sol</button>
+        <button class="item" onclick="updateProductImage('gafas', 2)">Gafas de Lectura</button>
+    </div>
+
+
+
+
 
     <div class="carousel">
         <div class="carousel-images">
             <!-- Carrusel de imágenes de Cloudinary -->
+
+            <!-- Beisbolera Azul LA
             <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1742491414/iz4jt8v5zjqgdswn4l54.jpeg" alt="Imagen 1">
             <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1742491414/dkh5qxo0tm9anp0ikhcv.jpeg" alt="Imagen 1">
             <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1742491414/imf2m52th4zrqefjeaci.jpeg" alt="Imagen 1">
             <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1742491414/a1p1ufcfzpnwudpxceem.jpeg" alt="Imagen 1">
-            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1742491414/epiafkbdsbmf6gpdl5ns.jpeg" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1742491414/epiafkbdsbmf6gpdl5ns.jpeg" alt="Imagen 1"> -->
+
+            <!-- Beisbolera Blanca LA
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/byu9qpwhe67ip07oruff.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/tqxqru6zogra8lrjb0mr.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/np941eub55nqjzvbdrum.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/zlnw9nqcs97jvabpnpjo.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/lndqdpj1vev0x4t0sueg.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/bqtgwjljzcdzagye2gwc.png" alt="Imagen 1">-->
+
+
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/byu9qpwhe67ip07oruff.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/tqxqru6zogra8lrjb0mr.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/np941eub55nqjzvbdrum.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/zlnw9nqcs97jvabpnpjo.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/lndqdpj1vev0x4t0sueg.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/bqtgwjljzcdzagye2gwc.png" alt="Imagen 1">
+
+
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/byu9qpwhe67ip07oruff.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/tqxqru6zogra8lrjb0mr.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/np941eub55nqjzvbdrum.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/zlnw9nqcs97jvabpnpjo.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/lndqdpj1vev0x4t0sueg.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/bqtgwjljzcdzagye2gwc.png" alt="Imagen 1">
+
+
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/byu9qpwhe67ip07oruff.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/tqxqru6zogra8lrjb0mr.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/np941eub55nqjzvbdrum.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/zlnw9nqcs97jvabpnpjo.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/lndqdpj1vev0x4t0sueg.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/bqtgwjljzcdzagye2gwc.png" alt="Imagen 1">
+
+
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/byu9qpwhe67ip07oruff.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/tqxqru6zogra8lrjb0mr.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/np941eub55nqjzvbdrum.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/zlnw9nqcs97jvabpnpjo.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/lndqdpj1vev0x4t0sueg.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/bqtgwjljzcdzagye2gwc.png" alt="Imagen 1">
+
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/byu9qpwhe67ip07oruff.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/tqxqru6zogra8lrjb0mr.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/np941eub55nqjzvbdrum.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/zlnw9nqcs97jvabpnpjo.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/lndqdpj1vev0x4t0sueg.png" alt="Imagen 1">
+            <img src="https://res.cloudinary.com/dfk0xtypj/image/upload/v1743225509/bqtgwjljzcdzagye2gwc.png" alt="Imagen 1">
+
+
+
+
+
+
+
+            Frente
+            Iquierda diagonal
+            Derecha diagonal
+            Izquierda lateral
+            Derecha Lateral
+            Atrás
         </div>
         <div class="carousel-buttons">
             <button class="carousel-button" id="prev"></button>
@@ -45,6 +140,7 @@
         </div>
     </div>
 
+    <script src="js/ButtonsCategory.js"></script>
     <script src="js/carrusel.js"></script>
     <script src="js/instagram.js"></script>
     <script src="js/main.js"></script>

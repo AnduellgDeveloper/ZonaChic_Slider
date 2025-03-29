@@ -6,6 +6,7 @@
 }
 
 body {
+    position: relative;
     max-width: 1200px;
     max-height: 800px;
     margin: 0 auto;
@@ -88,6 +89,7 @@ body {
 /* Estilos del slider principal */
 .slider {
     position: relative;
+    z-index: 1;
     width: 150%;
     height: 100vh;
     overflow: hidden;

@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+/* Contenedor principal de los botones */
+.container {
+    display: flex; /* Activamos el modelo flexbox */
+    flex-direction: column; /* Los elementos dentro se ordenan de arriba hacia abajo */
+    align-items: center; /* Centrar los elementos horizontalmente */
+    justify-content: flex-start; /* Alinea los elementos al inicio del contenedor */
+    gap: 20px; /* Espaciado entre los elementos */
+}
+
+/* Estilo para los botones (esto es solo un ejemplo) */
+button {
+    padding: 10px 20px;
+    margin: 5px 0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+.dark-theme {
+    background-color: black;
+    color: white;
+}
+
+
+nav button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button#theme-toggle {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.carousel {
+    margin-top: 20px;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 50px; /* Ajusta la distancia del dropdown desde la parte superior */
+    left: 0; /* Ajusta la distancia desde la izquierda */
+    z-index: 10; /* Asegura que el dropdown esté por encima del carrusel */
+    border: 1px solid #ccc; /* Borde opcional */
+    background-color: #e2e6f2;
+    width: 100%; /* O ajusta al tamaño deseado */
+
+}
+/* Botón de dropdown */
+.dropdown-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content .item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
