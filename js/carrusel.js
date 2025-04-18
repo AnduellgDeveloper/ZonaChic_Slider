@@ -32,4 +32,4 @@
         // Configuración del autoscroll cada 5 segundos
         setInterval(() => {
             nextButton.click();
-        }, 2000); // Cambia de imagen cada 5 segundos
+        }, 3200); // Cambia de imagen cada 5 segundos

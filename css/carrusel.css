@@ -14,7 +14,7 @@
 
 .carousel-images {
     display: flex;
-    transition: transform 2s ease;
+    transition: transform 4s ease;
 }
 
 .carousel-images img {
